@@ -2,7 +2,9 @@ package sort;
 
 public abstract class AbstractSort {
 
-	public static void sort(Comparable[] a) {};
+	
+	public static void sort(Comparable[] a) {}
+		
 	
 	
 	protected static void show(Comparable[] a) {
@@ -20,6 +22,7 @@ public abstract class AbstractSort {
 		return a.compareTo(b)<0;	//a가 작으면 true반환
 	}
 	
+
 	protected static boolean isSorted(Comparable[] a) {
 		for(int i=0; i<a.length; i++) 
 			if(!less(a[i],a[i+1])) return false;

@@ -6,22 +6,25 @@ public class Main {
 		Selection abs = new Selection();
 		Insertion ins = new Insertion();
 		Shell sh = new Shell();
+		Merge mrg = new Merge();
+		Count cnt = new Count();
+		
 		Comparable[] a = {'C','B','D','A','X','F'};
 		Comparable[] b = {4,2,6,3,1,3,2,5,2,1,5,6,1};
+		Comparable[] c = {2,4,1,1,2,3};
 		
 		
-		//Selection Sort
-		/*
+		/*	Selection Sort
 		double selectStart = System.currentTimeMillis();
 		abs.sort(a);
 		abs.show(a);
 		double selectEnd = System.currentTimeMillis();
 		double tookTime = (selectEnd-selectStart)/1000;
 		System.out.println(tookTime);
-		*/
 		
-		//Insertion Sort
-		/*
+		
+
+		/*	Insertion Sort
 		double selectStart = System.currentTimeMillis();
 		ins.sort(a);                                    
 		ins.show(a);                                    
@@ -30,8 +33,8 @@ public class Main {
         System.out.println(tookTime);
 		*/
 		
-		//Shell Sort
-		/*
+		
+		/*	Shell Sort
 		double selectStart = System.currentTimeMillis();
 		sh.sort(b);                                    
 		sh.show(b);                                    
@@ -40,5 +43,19 @@ public class Main {
         System.out.println(tookTime);
 		*/
 		
+		/*	Merge
+		double selectStart = System.currentTimeMillis();
+		mrg.sort(c);                                    
+		double selectEnd = System.currentTimeMillis();  
+        double tookTime = (selectEnd-selectStart)/1000; 
+        System.out.println(tookTime);
+		*/
+		
+		double selectStart = System.currentTimeMillis();
+		cnt.sort(b);
+		double selectEnd = System.currentTimeMillis();  
+        double tookTime = (selectEnd-selectStart)/1000; 
+        System.out.println(tookTime);
+
 	}
 }
