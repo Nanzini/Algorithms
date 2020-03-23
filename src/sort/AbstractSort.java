@@ -13,6 +13,7 @@ public abstract class AbstractSort {
 	
 	protected static void exch(Comparable[] a, int i,int j) {
 		Comparable tmp=a[i];	a[i]=a[j];	a[j]=tmp;
+		System.out.println(a[i]+"¿Í"+a[j]+"¹Ù²ï´Ù.");
 	}
 	
 	protected static boolean less(Comparable a, Comparable b) {
