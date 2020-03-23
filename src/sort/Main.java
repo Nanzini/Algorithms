@@ -30,13 +30,15 @@ public class Main {
         System.out.println(tookTime);
 		*/
 		
+		//Shell Sort
+		/*
 		double selectStart = System.currentTimeMillis();
 		sh.sort(b);                                    
 		sh.show(b);                                    
 		double selectEnd = System.currentTimeMillis();  
         double tookTime = (selectEnd-selectStart)/1000; 
         System.out.println(tookTime);
-		
+		*/
 		
 	}
 }
