@@ -8,10 +8,11 @@ public class Main {
 		Shell sh = new Shell();
 		Merge mrg = new Merge();
 		Count cnt = new Count();
+		Radix rdx = new Radix();
 		
 		Comparable[] a = {'C','B','D','A','X','F'};
 		Comparable[] b = {4,2,6,3,1,3,2,5,2,1,5,6,1};
-		Comparable[] c = {2,4,1,1,2,3};
+		int[] c = {241,34,11,1,52,3};
 		
 		
 		/*	Selection Sort
@@ -51,11 +52,15 @@ public class Main {
         System.out.println(tookTime);
 		*/
 		
+		/* Count
 		double selectStart = System.currentTimeMillis();
-		cnt.sort(b);
+		cnt.sort(a);
 		double selectEnd = System.currentTimeMillis();  
         double tookTime = (selectEnd-selectStart)/1000; 
         System.out.println(tookTime);
-
+		*/
+		rdx.sort(c);
+		rdx.show(c);
+		
 	}
 }

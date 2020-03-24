@@ -1,11 +1,18 @@
 package sort;
 
+import java.util.ArrayList;
+
 public abstract class AbstractSort {
 
 	
 	public static void sort(Comparable[] a) {}
 		
-	
+
+	protected static void show(ArrayList t1) {
+		for(int i=0; i<t1.size(); i++)
+			System.out.print(t1.get(i)+" ");
+		System.out.println();
+	}
 	
 	protected static void show(Comparable[] a) {
 		for(int i=0; i<a.length; i++)
@@ -29,4 +36,11 @@ public abstract class AbstractSort {
 		return true;
 	}
 	
+	protected static Comparable getMax(Comparable[] a) {		
+		Comparable max = a[0];
+		for(int i=1; i<a.length; i++)
+			if(less(max,a[i]))
+				max=a[i];
+		return max;
+	}
 }
