@@ -51,11 +51,10 @@ public class Radix extends AbstractSort{
 			System.out.println(a[i]+" ");
 		System.out.println();
 	}
-	protected static int[] initArr(int[] arr1,int[] arr2) {
+	protected static void initArr(int[] arr1,int[] arr2) {
 		if(arr1.length == arr2.length)
 			for(int i=0; i<arr1.length; i++)
 				arr1[i] = arr2[i];
-		return arr2;
 	}
 	
 	protected static int[] initArr(int[] arr) {
