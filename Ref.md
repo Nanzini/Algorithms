@@ -1,7 +1,3 @@
-# Algorithms
-
- <br>
-
 # 1.Sorting
 
 - ## [Selection](#Selection-Sort)
@@ -13,6 +9,24 @@
 - ## [Radix](#Radix-Sort)
 
 ---
+
+<br><br>
+
+# 2. Hash
+
+해쉬의 confilct대처방식과 주소매핑과정에 따른 정책
+
+- ## [선형오버플로우](#Linear-Probing)
+- ## [더블해시](#Double-Hashing)
+- ## [뻐꾸기해시](#Cuckoo-Hashing)
+
+---
+
+<br><br>
+
+# 3. [파일여는법](#파일사용법)
+
+<br><br><br>
 
 ## Selection Sort
 
@@ -132,3 +146,43 @@ h개만큼 떨어진 원소들과 비교 후 정렬한다. 삽입정렬에서 �
        - 원배열의 마지막인덱스부터 처음까지 누적배열과 비교해서 정렬
 
 - [Radix Sort](!https://lktprogrammer.tistory.com/48)
+
+---
+
+<br><br>
+
+# 2. Hash
+
+해시를 사용하면 무작위 데이터를 삽입 삭제할 때 시간복잡도 O(1)로 처리할 수 있다.<br>
+하지만 해시테이블 주소매핑 과정 시 충돌이 발생하면 검색시간에 영향을 미칠 수 있고 더 나아가 테이블 적재도가 높아지게 되면 rehash를 해야하는 데 이때 비용이 크기 때문에 가급적이면 중복방지에 신경을 써야한다.
+
+<br>
+
+## Linear Probing
+
+- 주소매핑과정에서 Overflow가 발생하면 그 다음 주소에 매핑하는 방식.
+- 데이터의 Clustering 현상이 발생한다.
+  <br><br>
+
+## Double Hashing
+
+- 주소매핑과정시 주소중복을 막기위해 2개의 해시함수를 사용한다.
+- 삭제과정 구현이 어렵다
+  <br><Br>
+
+## Cuckoo Hashing
+
+- 주소중복이 있을 때 자리를 뺏고 뺏는 형태의 해시매핑방식.
+- 뺏고 뺏다보면 무한루프가 발생하는 데, 이때 rehash를 한다.
+
+<br>
+
+---
+
+<br><br>
+
+# 파일사용법
+
+0. Ref.md를 읽어본다
+1. 압축을 푼다
+2. src폴더 > sort or hash폴더에서 java file을 열고 실행한다.
