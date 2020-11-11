@@ -1,4 +1,4 @@
-# 1.Sorting
+# Algorithms (Sorting & Hash)
 
 - ## [Selection](#Selection-Sort)
 - ## [Insertion](#Insertion-Sort)
