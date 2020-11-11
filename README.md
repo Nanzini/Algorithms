@@ -1,5 +1,10 @@
 # Algorithms (Sorting & Hash)
 
+<br><br>
+
+----
+
+# 1. Sorting
 - ## [Selection](#Selection-Sort)
 - ## [Insertion](#Insertion-Sort)
 - ## [Shell](#Shell-Sort)
